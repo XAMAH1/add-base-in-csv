@@ -1,17 +1,10 @@
 import logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 import asyncio
-
-
 from sqlalchemy import text
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.testing.pickleable import User
-from sqlalchemy.testing.plugin.plugin_base import warnings
-
 from database import *
 import pandas as pd     # библиотека для чтения CSV
-
 from database.main import create_table
 
 
